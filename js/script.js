@@ -24,7 +24,6 @@ async function getMovies(){
     prev.disabled = true;
     const resp = await fetch(`${apiUrl}+i`);
     const resJ = await resp.json();
-    console.log(resJ.results);
     for(let movie of resJ.results){
         const markup = `
             <div class="movie">
@@ -51,7 +50,6 @@ async function Search(query){
         next.disabled = true;
         const resp = await fetch(`${searchUrl}${query}`);
         const resJ = await resp.json();
-        console.log(resJ.results);
         for(let movie of resJ.results){
             const markup = `
             <div class="movie">
@@ -80,10 +78,8 @@ form.addEventListener('submit', e => {
 async function viewMovie(id){
     const resp = await fetch(`${detailsUrlBeforeId}${id}${movieDetails}`);
     const resJ = await resp.json();
-    console.log(resJ);
     const castp = await fetch(`${detailsUrlBeforeId}${id}${castAndCrew}`);
     const castJ = await castp.json();
-    console.log(castJ);
     let gen = [];
     for(let g of resJ.genres){
         gen.push(g.name);
@@ -136,7 +132,6 @@ async function goNext(){
         i++;
         const resp = await fetch(`${apiUrl}${i}`);
         const resJ = await resp.json();
-        console.log(resJ.results)
         for(let movie of resJ.results){
             const markup = `
                 <div class="movie">
@@ -167,7 +162,6 @@ async function goBack(){
         i--;
         const resp = await fetch(`${apiUrl}${i}`);
         const resJ = await resp.json();
-        console.log(resJ.results)
         for(let movie of resJ.results){
             const markup = `
                 <div class="movie">
