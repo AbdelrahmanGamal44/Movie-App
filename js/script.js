@@ -83,7 +83,6 @@ async function viewMovie(id){
     let gen = [];
     for(let g of resJ.genres){
         gen.push(g.name);
-        console.log(g.name);
     }
     const markup = `
     <div class="card">
