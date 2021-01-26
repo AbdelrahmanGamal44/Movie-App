@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Library</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <p onclick="goHome()" class="home">Movies Lib</p>
+        </div>
+        <form class="search-box">
+            <input type="text" class="search-input" value="Search Movies .." onfocus="clearValue()" onblur="setValue()">
+        </form>
+        <div class="movies-container">
+            <!-- <div class="movie">
+                <img onclick = "viewMovie()" src="./images/1.jpeg" alt="aef">
+                <div class="info">
+                    <h4>Bronuuu</h4>
+                    <span><i class="fas fa-star"></i>80</span>
+                </div>
+                <div class="overview">
+                    <h4>Overview</h4>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="page-control">
+            <button type="button" class="previous" onclick="goBack()">&laquo; Previous</button>
+            <button type="button" class="next" onclick="goNext()">Next &raquo;</button>
+        </div>
+    </div>
+    <script src="./js/all.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
