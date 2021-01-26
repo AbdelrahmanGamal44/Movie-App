@@ -337,3 +337,17 @@ body {
     grid-row: 3/4;
   }
 }
+/*FOR MOBILES*/
+@media only screen and (min-width: 600px) {
+  .header p {
+    width: 75%;
+    font-size: var(--font-size-large);
+  }
+  .movies-container {
+    grid-gap: 0;
+    padding: 0;
+  }
+  .card {
+    width: 70%;
+  }
+}
