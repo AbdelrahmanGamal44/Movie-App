@@ -338,7 +338,7 @@ body {
   }
 }
 /*FOR MOBILES*/
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
   .header p {
     width: 75%;
     font-size: var(--font-size-large);
