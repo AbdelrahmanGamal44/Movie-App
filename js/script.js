@@ -111,6 +111,7 @@ async function viewMovie(id){
     </div>
     `;
     moviesContainer.style.display = 'none';
+    form.style.display = 'none';
     prev.style.display = 'none';
     next.style.display = 'none';
     moviesContainer.insertAdjacentHTML('afterend', markup);
